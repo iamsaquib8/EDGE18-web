@@ -1,0 +1,61 @@
+.footer{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+hr{
+    border-top: 1px solid white;
+    width: 20%;
+    margin: 0;
+}
+h4 {
+    font-size: 1.05rem;
+
+    text-transform: uppercase;
+    line-height: 110%;
+    margin: .82rem 0 .82rem 0;
+}
+
+h4:hover{       
+    color: rgba(231, 76, 60,1.0);
+}
+h3{
+    font-size: 1.34rem;
+    line-height: 110%;
+    margin: 1.05rem 0;
+}
+.icon {
+    padding: 10px 20px 20px 0;
+}
+
+.foot{
+    padding-right: 10%;
+    padding-top: 2%; 
+}
+
+.fa-facebook:hover{
+    color: #3b5998;
+}
+
+.fa-instagram:hover {
+    color: #ffc838;
+}
+
+.fa-twitter:hover{
+    color:  #0084b4;
+}
+
+.fa-youtube-play:hover{
+    color: #ff0000;
+}
+
+a{
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}

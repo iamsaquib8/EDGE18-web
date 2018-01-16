@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row"> 
+       <div class="col-md-4" *ngFor="let subevent of subevents">
+         <ul class="ch-grid">
+           <li (click)="onSelectSubEvent(subevent)"  >
+           
+           <div class="ch-item {{subevent.img}}">
+             <div class="ch-info-wrap">
+               <div class="ch-info">
+                 <div class="ch-info-front {{subevent.img}}"></div>
+                   <div class="ch-info-back">
+                     <h3>{{subevent._CategoryName}}</h3>         
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </div>

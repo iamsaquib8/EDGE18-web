@@ -4,9 +4,7 @@
     margin: 0;
 }
 
-#nav {
-    margin-top: 20px;
-    margin-bottom: 55px;
+#nav { 
     text-align: center;
 }
 .fonts-display {
@@ -49,7 +47,7 @@
 #nav a:hover,a:focus,a:active{
     text-decoration: none;
 }
-.cool-link::after {
+#nav .cool-link::after {
     content: '';
     display: block;
     width: 0;
@@ -58,7 +56,7 @@
     transition: width .3s;
 }
 
-.cool-link:hover::after {
+#nav .cool-link:hover::after {
     width: 100%;
     //transition: width .3s;
 }
@@ -70,9 +68,7 @@ a {
     transition: all 275ms;
     cursor: pointer;
     text-decoration: none;
-    border-bottom: 1px solid #181818;
 }
-
 
 .logo a img:hover{
     display: block;
@@ -80,17 +76,6 @@ a {
 }   
 
 
-.tagline {
-    font-size: 90px;
-    word-spacing: 1px;
-    line-height: 90px;
-    font-family: "neuzeitgrobold",sans-serif;
-    text-transform: none;
-    letter-spacing: -3px;
-    color: #181818;
-    text-align: center;
-    margin: .95em 0 0;
-}
 
 .mq-mobile-i-block, .mq-mobile{
     display:none!important;
@@ -98,17 +83,11 @@ a {
 
 @media screen and (max-width: 898px){
     #nav p.logo {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         width: 120px;
     }
     #nav p, #nav p.alpha, #nav p.omega {
         margin: 0;
-    }
-    #nav p {
-        width: auto;
-        font-size: 20px;
-        word-spacing: 1px;
-        line-height: 32px;
     }
     .mq-mobile-i-block {
         display: inline-block!important;
@@ -129,8 +108,10 @@ a {
         line-height: 32px;
     }
     #nav a {
-        padding: 0 10px;
+        font-size: 16px;
+        padding: 5px 10px;
         border: none;
+        color: black;
     }
     hr.center.grid-2 {
         width: 120px;
@@ -140,5 +121,21 @@ a {
         word-spacing: 1px;
         line-height: 70px;
         margin-top: .3em;
+    }
+    .fonts-display{
+        letter-spacing: 1px;
+    }
+
+    a.active{
+        color: rgba(231, 76, 60,1.0);
+    }
+}
+
+@media screen and (max-width: 1048px) and (min-width: 898px){
+    .fonts-display{
+        letter-spacing: 1px;
+    }
+    #nav p{
+        width: auto;
     }
 }

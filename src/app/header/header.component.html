@@ -1,24 +1,29 @@
 <nav id="nav" class="center grid-14">
     <div class="fonts-display clearfix">
         <p class="logo mq-mobile-i-block">
-            <a href="/" title="Built by Buffalo - Web Design Brighton UK" class="active">
-              <img class="logo-img" src="../assets/img/icon.png" alt="Buffalo" style="width:120px;"/>        
+            <a title="Built by Team-Geekonix" routerLink="/">
+              <img class="logo-img" src="../assets/img/icon.png" alt="Edge" style="width:70px;"/>        
             </a>
         </p>
         <br class="mq-mobile">
-        <p class="cool-link text-left alpha"><a href="/">Home</a>
-        <p class="cool-link text-left"><a href="/">Events</a>
-        <p class="cool-link text-left"><a href="/">Mega Events</a>
+        <p class="cool-link text-left alpha"><a routerLink="/"  
+          routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <p class="cool-link text-left" ><a routerLink="/events" 
+          routerLinkActive="active">Events</a>
+        <p class="cool-link text-left" ><a routerLink="/mega-events" 
+          routerLinkActive="active">Mega Events</a>
         <p class="logo mq-wide-i-block mq-mid-i-block mq-small-i-block">
-          <a href="/" >
-            <img src="../assets/img/presented.png" alt="Built By" style="width:120px;">
-            <img class="logo-img" src="../assets/img/icon.png" alt="Buffalo" style="width:120px;"/>
+          <a routerLink="/" 
+          routerLinkActive="active">
+            <img src="../assets/img/presented.png" alt="Built By" style="width:125px;">
+            <img class="logo-img" src="../assets/img/geekonix.png" alt="Buffalo" style="width:120px;"/>
           </a>
-        <p class="cool-link text-right"><a href="/feed">About</a>
-        <p class="cool-link text-right"><a href="/jobs">Team</a>
-        <p class="cool-link text-right omega"><a href="/contact">Contact</a>
+        <p class="cool-link text-right" ><a routerLink="/intra" 
+          routerLinkActive="active">Intra</a>
+        <p class="cool-link text-right" ><a routerLink="/sponsor" 
+          routerLinkActive="active">Sponsor</a>
+        <p class="cool-link text-right omega" ><a routerLink="/team" 
+          routerLinkActive="active">Team</a>
        
     </div>
-</nav>  
-<hr class="grid-2 center mq-mobile">
-<h1 class="tagline">EDGE'18</h1>
+</nav>

@@ -1,0 +1,13 @@
+
+.container-fluid {
+   padding: 0;
+  }
+    @media screen and (max-width: 896px){
+      .container-fluid{
+        height: 20vh;   
+    }
+    img{
+        height: 20vh;
+    }
+  }
+  

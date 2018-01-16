@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="display-4 head">{{ subevent._CategoryName }}</h1>
+      <blockquote class="animated slideInRight">{{subevent._Quote}}</blockquote>
+      <div class="contain">
+        <h1 class="display">Problem Statement:</h1>
+        <p>{{subevent._ProblemDescription}}</p>
+        <h1 class="display" *ngIf="_rules.length !== 0">Rules:</h1>
+          <br *ngIf="_rules.length !== 0">
+          
+        <ul class="rule" *ngFor="let _rule of _rules" >
+          <li *ngIf="_rules.length !== 0">{{_rule}} </li>
+        </ul>
+          <br>
+        <h1 class="display" *ngIf="_specs.length !== 0">Specifications:</h1>
+        <br *ngIf="_specs.length !== 0">
+        <ul class="rule" *ngFor="let _spec of _specs" >
+            <li *ngIf="_specs.length !== 0">{{_spec}} </li>
+        </ul>
+        <br *ngIf="_specs.length !== 0">
+        
+        <h1 class="display" *ngIf="_scores.length !== 0">Scoring Rules:</h1>
+        <br *ngIf="_scores.length !== 0">
+        <ul class="rule" *ngFor="let _score of _scores" >
+            <li *ngIf="_scores.length !== 0">{{_score}} </li>
+        </ul>
+        <br *ngIf="_scores.length !== 0">
+        
+        <h1 class="display">Contacts:</h1>
+        <br>
+        <ul class="contact" *ngFor="let _contact of _contacts">
+            <li>{{_contact}} </li>
+        </ul>
+             
+      </div>
+
+      
+    </div>
+  </div>
+</div>
