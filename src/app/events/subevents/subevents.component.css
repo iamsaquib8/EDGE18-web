@@ -5,6 +5,8 @@ li{
     padding: 2% 2%;
     background: white;
     border-radius: 1%;
+    
+    min-height: 71.1vh;
 }
 
 .ch-grid { 
@@ -121,6 +123,9 @@ li{
     background-image: url(../../../assets/img/Icons/wizcase.png);
 }
 
+.in-1{
+    background-image: url(../../../assets/img/Icons/project.png);
+}
 .in-2{
     background-image: url(../../../assets/img/Icons/khuljass.png);
 }
@@ -196,6 +201,99 @@ li{
     background-image: url(../../../assets/img/Icons/blitzkreig.png);
 }
 
+.mm-1{
+    background-image: url(../../../assets/img/Icons/bplan.png);
+}
+
+.mm-2{
+    background-image: url(../../../assets/img/Icons/stockit.png);
+}
+
+.mm-3{
+    background-image: url(../../../assets/img/Icons/bquiz.png);
+}
+
+.mm-4{
+    background-image: url(../../../assets/img/Icons/addomedia.png);
+}
+
+.boom-1{
+    background-image: url(../../../assets/img/Icons/boomeran.png);
+}
+.boom-2{
+    background-image: url(../../../assets/img/Icons/musically.png);
+}
+
+
+.el-1{
+    background-image: url(../../../assets/img/Icons/cadomania.png);
+}
+
+.el-2{
+    background-image: url(../../../assets/img/Icons/nirmaan.png);
+}
+
+.cc-1{
+    background-image: url(../../../assets/img/Icons/csgopro.png);
+}
+
+
+.cc-2{
+    background-image: url(../../../assets/img/Icons/csgocollege.png);
+}
+.cc-3{
+    background-image: url(../../../assets/img/Icons/dota2.png);
+}
+.cc-4{
+    background-image: url(../../../assets/img/Icons/fifa14.png);
+}
+.cc-5{
+    background-image: url(../../../assets/img/Icons/fifa.png);
+}
+.cc-6{
+    background-image: url(../../../assets/img/Icons/nfs.png);
+}
+.cc-8{
+    background-image: url(../../../assets/img/Icons/pool.png);
+}
+.cc-7{
+    background-image: url(../../../assets/img/Icons/militia.png);
+}
+
+.ne-1{
+    background-image: url(../../../assets/img/Icons/Thequiz.png);
+}
+
+
+.ne-2{
+    background-image: url(../../../assets/img/Icons/electronicallyyours.png);
+}
+
+
+.ne-3{
+    background-image: url(../../../assets/img/Icons/youthparliament.png);
+}
+
+.fe-1{
+    background-image: url(../../../assets/img/Icons/bodyzorbing.png);
+}
+
+.fe-2{
+    background-image: url(../../../assets/img/Icons/redbullpong.png);
+}
+
+.fe-3{
+    background-image: url(../../../assets/img/Icons/paintball.png);
+}
+
+.fe-4{
+    background-image: url(../../../assets/img/Icons/hitthecan.png);
+}
+
+
+.fe-5{
+    background-image: url(../../../assets/img/Icons/electricbull.png);
+}
 
 .ch-info h3 {
 	color: #fff;
@@ -257,4 +355,40 @@ li{
 }
 a {
     cursor: pointer;
+}
+@media only screen and (max-width: 480px){
+    .display-4{
+        font-size: 2.7rem;
+    }
+    .display{
+        font-size: 2rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    p, li{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .container{
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 896px)  {
+    .display{
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .display-4{
+        font-size: 2.9rem;
+    }
+    p, li{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .container{
+        overflow-x: hidden;
+    }   
 }

@@ -8,20 +8,21 @@
     text-align: center;
 }
 .fonts-display {
-    font-family: "freightsans_regular",sans-serif;
-    font-weight: 300;
+    
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 #nav p.alpha {
     margin-left: 0;
 }
 #nav p {
+    font-family: "freightsans_regular",sans-serif;
+    font-weight: 100;
     display: inline-block;
     vertical-align: middle;
     vertical-align: middle;
-    width: 120px;
+    width: 100px;
     margin: 0 10px;
 }
 .logo a{
@@ -52,7 +53,7 @@
     display: block;
     width: 0;
     height: 2px;
-    background: rgba(231, 76, 60,1.0);
+    background: #e7221c;
     transition: width .3s;
 }
 
@@ -88,6 +89,9 @@ a {
     }
     #nav p, #nav p.alpha, #nav p.omega {
         margin: 0;
+    }
+    .logo-img{
+        margin-left: 16%;
     }
     .mq-mobile-i-block {
         display: inline-block!important;
@@ -127,11 +131,11 @@ a {
     }
 
     a.active{
-        color: rgba(231, 76, 60,1.0);
+        color: #e7221c;
     }
 }
 
-@media screen and (max-width: 1048px) and (min-width: 898px){
+    @media screen and (max-width: 1048px) and (min-width: 898px){
     .fonts-display{
         letter-spacing: 1px;
     }

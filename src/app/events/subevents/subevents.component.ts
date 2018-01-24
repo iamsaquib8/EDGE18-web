@@ -10,17 +10,23 @@ import { Router } from '@angular/router';
 })
 export class SubeventsComponent implements OnInit {
 
-  private subevents: {
+   subevents: {
     _CategoryName: string;
     img: string;
+    _Quote: string;
     _ProblemDescription: string;
     _EventRules: string[];
     _Specification: string[],
-    _Scoring: string[],
-    _Coordinators: string[];
+    _Scoring: string[], _Coordinators: ({
+      name: string;
+      phn: string;
+  } | {
+      namme: string;
+      phn: string;
+  })[]
 }[] = [];
 
-  private eventName: string;
+  eventName: string;
   constructor(private router: Router, private route: ActivatedRoute, private _events: MyeventsService) { }
 
   ngOnInit() {

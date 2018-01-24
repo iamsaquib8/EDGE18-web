@@ -39,7 +39,8 @@ blockquote {
    }
 
 .container{
-    height: 65vh;
+    min-height: 70vh;
+    text-align: center;
 }
 
 a{

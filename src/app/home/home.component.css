@@ -2,12 +2,47 @@
 .container-fluid {
    padding: 0;
   }
+
+  .row img{
+    height:71.1vh;
+     width:100vw;
+  }
+  
+  .para{
+    text-align: center;
+     font-size: 20px;
+    padding: 20px 0px;
+    font-weight: bolder!important;
+    }
+  .row{
+      
+     margin: 0 !important;
+  }
     @media screen and (max-width: 896px){
       .container-fluid{
-        height: 20vh;   
+        height: 70vh!important;   
     }
-    img{
-        height: 20vh;
+    .row img{
+        height: 70vh;
     }
-  }
+}
+    @media only screen and (max-width: 480px){
+        .container-fluid{
+          height: 50vh!important;
+          overflow-x: hidden;
+        }
+        .row img{
+          height: 45.5vh!important;
+          
+          overflow-x: hidden;
+        }
+
+        .para{
+          padding: 10px 0;
+          font-size: 14px;
+
+        }
+      }
+
+      
   

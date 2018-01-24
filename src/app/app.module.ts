@@ -21,6 +21,10 @@ import { AccomodationComponent } from './accomodation/accomodation.component';
 import { IntraComponent } from './intra/intra.component';
 import { MerchandiseComponent } from './merchandise/merchandise.component';
 import { CampusAmbassadorComponent } from './campus-ambassador/campus-ambassador.component';
+import { MegaEventService } from './mega-event/mega-event.service';
+import { SubEventComponent } from './mega-event/sub-event/sub-event.component';
+import { AboutComponent } from './about/about.component';
+import { SponsorshipsComponent } from './sponsorships/sponsorships.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,12 +42,15 @@ import { CampusAmbassadorComponent } from './campus-ambassador/campus-ambassador
     IntraComponent,
     MerchandiseComponent,
     CampusAmbassadorComponent,
+    SubEventComponent,
+    AboutComponent,
+    SponsorshipsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [MyeventsService],
+  providers: [MyeventsService, MegaEventService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

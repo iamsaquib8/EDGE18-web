@@ -10,22 +10,38 @@ import { Router, Params } from '@angular/router';
 })
 export class EventDetailComponent implements OnInit {
 
-  private subevent: {
+ subevent: {
     _CategoryName: string;
     img: string;
+    _Quote: string;
+    _MAPS: any[];
     _ProblemDescription: string;
     _EventRules: string[];
     _Specification: string[];
-    _Scoring: string[];
-    _Coordinators: string[];
+    _Rounds: string[];
+    _Scoring: string[]; _Coordinators: ({
+      name: string;
+      phn: string;
+  } | {
+      namme: string;
+      phn: string;
+  })[]
   };
 
-  private _rules: string[];
-  private subeventName: string;
-  private event: string;
-  private _contacts: string[];
-  private _specs: string[];
-  private _scores: string[];
+   _rules: string[];
+   subeventName: string;
+   event: string;
+   _contacts: ({
+    name: string;
+    phn: string;
+} | {
+    namme: string;
+    phn: string;
+})[];
+   _specs: string[];
+   _scores: string[];
+   _map: string[];
+   _round : string[];
 
   constructor(private route: ActivatedRoute, private _events: MyeventsService, private router: Router) { }
 
@@ -39,5 +55,7 @@ export class EventDetailComponent implements OnInit {
     this._rules = this.subevent._EventRules;
     this._scores = this.subevent._Scoring;
     this._contacts = this.subevent._Coordinators;
+    this._map = this.subevent._MAPS;
+    this._round = this.subevent._Rounds;
   }
 }

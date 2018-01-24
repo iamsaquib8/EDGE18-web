@@ -1,7 +1,55 @@
 <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      team
+    <div class="row">
+      <div class="col-md-12 a">
+      <h1 class="display-4">Core Team</h1>
+      <div class="row"> 
+      <div class="col-md-4" *ngFor="let member of team">
+          <ul class="ch-grid">
+          <a href="{{member.link}}" target="_blank">
+          <li>
+            
+            <div class="ch-item {{member.img}}">
+              <div class="ch-info-wrap">
+                <div class="ch-info">
+                  <div class="ch-info-front {{member.img}}"></div>
+                    <div class="ch-info-back">
+                      <h3>{{member.name}}</h3>         
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <blockquote><strong>{{member.name}}</strong><br>{{member.desig}}</blockquote>
+            </li>
+          </a>
+          </ul>
+        </div>
+      </div>
+      <h1 class="display-4 b">Web Designing Team</h1>
+      <div class="row">
+      <div class="col-md-4" *ngFor="let member of webd">
+          <ul class="ch-grid">
+              <a href="{{member.link}}" target="_blank">
+          
+            <li>
+            
+            <div class="ch-item {{member.img}}">
+              <div class="ch-info-wrap">
+                <div class="ch-info">
+                  <div class="ch-info-front {{member.img}}"></div>
+                    <div class="ch-info-back">
+                      <h3>{{member.name}}</h3>         
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <blockquote><strong>{{member.name}}</strong><br>{{member.desig}}</blockquote>
+            </li>
+          </a>
+          </ul>
+        </div>
+        </div>
+      </div>
+      </div>
     </div>
-  </div>
-</div>

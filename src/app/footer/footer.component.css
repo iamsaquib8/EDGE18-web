@@ -16,7 +16,7 @@ h4 {
     font-size: 1.05rem;
 
     text-transform: uppercase;
-    line-height: 110%;
+    line-height: 100%;
     margin: .82rem 0 .82rem 0;
 }
 
@@ -25,7 +25,7 @@ h4:hover{
 }
 h3{
     font-size: 1.34rem;
-    line-height: 110%;
+    line-height: 100%;
     margin: 1.05rem 0;
 }
 .icon {
@@ -58,4 +58,19 @@ a{
 }
 a:hover{
     text-decoration: none;
+}
+
+.container{
+    padding: 0 4%;
+}
+
+@media only screen and (max-width: 480px){
+    h4{
+        font-size: 14px;
+    }
+    
+.container-fluid{
+    padding-top: 6%;
+    padding-bottom: 8%;
+}
 }

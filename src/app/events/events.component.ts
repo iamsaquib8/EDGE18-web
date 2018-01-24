@@ -16,7 +16,13 @@ export class EventsComponent implements OnInit {
         img: string;
         _ProblemDescription: string;
         _EventRules: string[];
-        _Coordinators: string[];
+         _Coordinators: ({
+          name: string;
+          phn: string;
+      } | {
+          namme: string;
+          phn: string;
+      })[]
     }[];
 }[]
  = [];
