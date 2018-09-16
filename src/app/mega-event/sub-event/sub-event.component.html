@@ -4,40 +4,33 @@
       <h3 class="display-3">{{event.name}}</h3>
       <blockquote class="animated slideInRight">{{event.about}}</blockquote>
       <div class="contain">
-      <h3 class="display-4" *ngIf="event.phase.length !== 0">Phase</h3>
+      <h3 class="display-4" *ngIf="event.phase.length !== 0">Phases of EDGE Deeds</h3>
       <ul class="rule" *ngFor="let _phase of event.phase; let i = index;" >
-        <h4 *ngIf="event.phase.length !== 0"> Phase {{i+1}}</h4>
+        <h4 *ngIf="event.phase.length !== 0 && i == 0">Collection Drive</h4>
+
+        <h4 *ngIf="event.phase.length !== 0 && i == 1">Walkathon - A walk against child labours</h4>
+
+        <h4 *ngIf="event.phase.length !== 0 && i == 2">Teach A Day</h4>
         <li *ngIf="event.phase.length !== 0">{{_phase}} </li>
       </ul>
-      <h3 class="display-4" *ngIf="event.guests.length !== 0">Intended Guests</h3>
       
-      <div class="row"> 
-          <div class="col-md-3" *ngFor="let _guests of event.guests">
-            <ul class="ch-grid">
-              <li *ngIf="event.guests.length !== 0">
-              
-              <div class="ch-item {{_guests.img}}">
-                <div class="ch-info-wrap">
-                  <div class="ch-info">
-                    <div class="ch-info-front {{_guests.img}}"></div>
-                      <div class="ch-info-back">
-                        <h3>{{_guests.name}}</h3>         
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div class="image" >
+        <img src="{{ event.img }}" alt="">
+      </div>
+        <h3 class="display-4" *ngIf="event.name === 'Edge Night' || event.name === 'Edge Talks'">Guests</h3>
+        <div class="image">
+          <img src="../../assets/night1.jpg" class="img-fluid" alt="" *ngIf="event.name === 'Edge Night'">
+
+          <img src="../../assets/night2.jpg" class="img-fluid" alt="" *ngIf="event.name === 'Edge Talks'">
+        </div>  
+
         <br>
         <h1 class="display">Contact:</h1>
-        <br>
         <ul class="contact" *ngFor="let _contact of _contacts">
           
           <li>{{_contact.name}} : <a href="tel:{{_contact.phn}}">{{_contact.phn}}</a></li>
         </ul>
-            
+                  
     </div>
     </div>
   </div>

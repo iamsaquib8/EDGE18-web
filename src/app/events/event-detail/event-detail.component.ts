@@ -22,20 +22,15 @@ export class EventDetailComponent implements OnInit {
     _Scoring: string[]; _Coordinators: ({
       name: string;
       phn: string;
-  } | {
-      namme: string;
-      phn: string;
   })[]
   };
 
    _rules: string[];
    subeventName: string;
+  
    event: string;
    _contacts: ({
-    name: string;
-    phn: string;
-} | {
-    namme: string;
+    name:  string;
     phn: string;
 })[];
    _specs: string[];

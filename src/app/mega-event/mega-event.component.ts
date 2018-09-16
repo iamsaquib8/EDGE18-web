@@ -14,7 +14,8 @@ export class MegaEventComponent implements OnInit {
     img: string;
     about: string;
     phase: string[];
-    guests: any[];
+
+    contacts: {name:string; phn: string;}[];
 }[] = [];
 
   constructor(private router: Router, private _megaEvent: MegaEventService) { }

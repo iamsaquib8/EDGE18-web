@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
-  team = [{img: 'team-1', name: 'Abhishek Singh', desig: 'Convener', link: ``},
+  team = [{img: 'team-1', name: 'Abhishek Singh', desig: 'Convener', link: `https://www.facebook.com/abhi6114`},
           {img: 'team-2', name: 'Ayush Tiwari', desig: 'Co-Convener', link: `https://www.facebook.com/ayushmantiwari.15`},
           {img: 'team-3', name: 'Deep Arora', desig: 'Co-Convener', link: `https://www.facebook.com/deep.arora.127`},
           {img: 'team-6', name: 'Shuvojit Ray Chaudhuri', desig: 'Sponsorship Head', link:`https://www.facebook.com/shuvojit.chaudhuri`},
@@ -19,7 +19,8 @@ export class TeamComponent implements OnInit {
           ];
     webd= [{img: 'team-10', name: 'IamSaquib', link: `https://www.facebook.com/iamsaquib007`},
     {img: 'team-11', name: 'Sanjeev Kumar', link: `https://www.facebook.com/profile.php?id=100006389324573`},
-    {img: 'team-12', name: 'Edge Designs', link: `https://www.facebook.com/Gx.Edg`}
+    {img: 'team-12', name: 'Shiv Kumar', link: `https://www.facebook.com/shivkumar201415`},
+    {img: 'team-13', name: 'Edge Designs', link: `https://www.facebook.com/Gx.Edg`}
     ];
   constructor() { }
 

@@ -137,7 +137,7 @@ li{
 }
 
 .ca-1{
-    background-image: url(../../../assets/img/Icons/BlindCoding.png);
+    background-image: url(../../../assets/img/Icons/blindcoding.png);
 }
 
 
@@ -156,12 +156,14 @@ li{
 .ca-6{
     background-image: url(../../../assets/img/Icons/flawless.png);
 }
-
+.ca-7{
+    background-image: url(../../../assets/img/Icons/Webd.png);
+}
 .fo-1{
     background-image: url(../../../assets/img/Icons/shootmup.png);
 }
 .fo-2{
-    background-image: url(../../../assets/img/Icons/instafilm.png);
+    background-image: url(../../../assets/img/Icons/instaedit.png);
 }
 .fo-3{
     background-image: url(../../../assets/img/Icons/instaclick.png);
@@ -222,6 +224,10 @@ li{
 }
 .boom-2{
     background-image: url(../../../assets/img/Icons/musically.png);
+}
+
+.boom-3{
+    background-image: url(../../../assets/img/Icons/rewind.png);
 }
 
 

@@ -20,9 +20,6 @@ export class SubeventsComponent implements OnInit {
     _Scoring: string[], _Coordinators: ({
       name: string;
       phn: string;
-  } | {
-      namme: string;
-      phn: string;
   })[]
 }[] = [];
 

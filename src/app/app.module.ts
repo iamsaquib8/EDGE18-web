@@ -25,6 +25,9 @@ import { MegaEventService } from './mega-event/mega-event.service';
 import { SubEventComponent } from './mega-event/sub-event/sub-event.component';
 import { AboutComponent } from './about/about.component';
 import { SponsorshipsComponent } from './sponsorships/sponsorships.component';
+import { EventsDetailComponent } from './intra/events-detail/events-detail.component';
+import { IntraEventsComponent } from './intra/intra-events/intra-events.component';
+import { IntraEventsService } from './intra/intra-events.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,12 +48,14 @@ import { SponsorshipsComponent } from './sponsorships/sponsorships.component';
     SubEventComponent,
     AboutComponent,
     SponsorshipsComponent,
+    EventsDetailComponent,
+    IntraEventsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [MyeventsService, MegaEventService],
+  providers: [MyeventsService, MegaEventService, IntraEventsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

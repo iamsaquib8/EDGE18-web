@@ -16,9 +16,11 @@ import { CampusAmbassadorComponent } from './campus-ambassador/campus-ambassador
 import { SubEventComponent } from './mega-event/sub-event/sub-event.component';
 import { AboutComponent } from './about/about.component';
 import { SponsorshipsComponent } from './sponsorships/sponsorships.component';
+import { EventsDetailComponent } from './intra/events-detail/events-detail.component';
+import { IntraEventsComponent } from './intra/intra-events/intra-events.component';
 
 const appRoutes: Routes = [
-      {path:'', redirectTo: 'home',pathMatch: 'full' },
+      {path: '', redirectTo: 'home',pathMatch: 'full'},
       {path: 'home', component: HomeComponent},
       {path: 'events', component: EventsComponent},
       {path: 'events/:event', component: SubeventsComponent},
@@ -31,6 +33,8 @@ const appRoutes: Routes = [
       {path: 'about', component: AboutComponent},
       {path: 'accomodation', component: AccomodationComponent},
       {path: 'intra', component: IntraComponent},
+      {path: 'intra/:event', component: IntraEventsComponent},
+      {path: 'intra/:event/:id', component: EventsDetailComponent},
       {path: 'merchandise', component: MerchandiseComponent},
       {path: 'campus-ambassador', component: CampusAmbassadorComponent},
       {path: 'sponsorships', component: SponsorshipsComponent},

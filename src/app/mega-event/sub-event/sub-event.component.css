@@ -58,34 +58,11 @@ li {
 }
 
 .n-1{
-    background-image: url(../../../assets/img/Icons/AbhishekNights.png);
+    background-image: url(../../../assets/night1.jpg);
 }
 
 .n-2{
-    background-image: url(../../../assets/img/Icons/EICNights.png);
-}
-
-.n-3{
-    background-image: url(../../../assets/img/Icons/AIBNights.jpg);
-}
-.n-4{
-    background-image: url(../../../assets/img/Icons/KannanGillNights.png);
-}
-.t-1{
-    background-image: url(../../../assets/img/Icons/dravidTalk.png);
-}
-
-.t-2{
-
-    background-image: url(../../../assets/img/Icons/GaurGopalTalk.png);
-}
-
-.t-3{
-    background-image: url(../../../assets/img/Icons/shubhashChandraTalk.png);
-}
-
-.t-4{
-    background-image: url(../../../assets/img/Icons/generalTalk.png);
+    background-image: url(../../../assets/night2.jpg);
 }
 
 .ch-grid { 
@@ -246,8 +223,7 @@ li {
     padding: 1% 4%;
 }
 p, li{
-    font-size: 1.2rem;
-    text-align: center;
+    font-size: 1.2rem;  
 }
 .display{
     font-size: 2.2rem;

@@ -60,6 +60,10 @@ a:hover{
     text-decoration: none;
 }
 
+a.active{
+    color: rgba(231, 76, 60,1.0)!important;
+}
+
 .container{
     padding: 0 4%;
 }

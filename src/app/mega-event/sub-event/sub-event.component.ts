@@ -16,12 +16,8 @@ export class SubEventComponent implements OnInit {
     name: string;
     img: string;
     about: string;
-    phase: string[];
-    guests: {
-      img: string;
-      name: string;
-  }[];
-  contacts: {name:string; phn: string;}[];
+      phase: string[];
+    contacts: {name:string; phn: string;}[];
   };
 
 
@@ -32,8 +28,6 @@ export class SubEventComponent implements OnInit {
     this.route.params.subscribe((params: Params) => {
       this.mega_event = params['name'];
     });
-
-
     this.event = this._mega.getCategory(this.mega_event);
     this._contacts = this.event.contacts;
 

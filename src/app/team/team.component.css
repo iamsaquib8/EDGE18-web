@@ -139,9 +139,12 @@
 }
 
 .team-12 { 
-    background-image: url(../../assets/img/Icons/design.png);     
+    background-image: url(../../assets/img/Icons/shiv.png);     
 }
 
+.team-13 { 
+    background-image: url(../../assets/img/Icons/design.png);     
+}
 
 
 
@@ -150,7 +153,7 @@
 	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-size: 18px;
+	font-size: 18px; 
 	margin: 0 15px;
 	padding: 80px 0 0 0;
 	height: 80px;

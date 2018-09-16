@@ -1,7 +1,28 @@
 <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-        <blockquote>To Be Updated Soon</blockquote>     
-    </div>
-  </div>
-</div>
+   
+    <h1 style="text-align:center;font-weight:bolder;">Scheduled on 5th, 6th and 7th of March, 2018.</h1>
+    <br>
+    
+    <h1 style="text-align:center;font-weight:bolder;">Registrations begin from 19th February, 2018 in the Edge Room, 11 a.m onwards</h1>
+    <br>
+    <div class="row">
+      <br>
+       <div class="col-md-4" *ngFor="let event of events">
+         <ul class="ch-grid">
+           <li (click)="onSelectEvent(event)"  >
+           
+           <div class="ch-item {{event.img}}">
+             <div class="ch-info-wrap">
+               <div class="ch-info">
+                 <div class="ch-info-front {{event.img}}"></div>
+                   <div class="ch-info-back">
+                     <h3>{{event.name}}</h3>         
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </div>

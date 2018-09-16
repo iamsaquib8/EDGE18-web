@@ -19,12 +19,9 @@ export class EventsComponent implements OnInit {
          _Coordinators: ({
           name: string;
           phn: string;
-      } | {
-          namme: string;
-          phn: string;
       })[]
     }[];
-}[]
+}[] 
  = [];
 
   constructor(private router: Router, private _events: MyeventsService) { }
